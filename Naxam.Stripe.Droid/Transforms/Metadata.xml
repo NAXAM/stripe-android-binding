@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+	<attr path="/api/package[@name='com.stripe.android.model']/class[@name='StripeSourceTypeModel']" name="visibility">public</attr>
+
+    <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getReceiver']" name="propertyName">SourceReceiver</attr>
+    <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setReceiver']" name="propertyName">SourceReceiver</attr>
+
+    <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getRedirect']" name="propertyName">SourceRedirect</attr>
+    <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setRedirect']" name="propertyName">SourceRedirect</attr>
+
+    <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getCodeVerification']" name="propertyName">SourceCodeVerification</attr>
+    <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setCodeVerification']" name="propertyName">SourceCodeVerification</attr>
+
+	<attr path="/api/package[@name='com.stripe.android.time']/class[@name='Clock']/method[@name='getCalendarInstance']" name="propertyName">SharedCalendar</attr>
+
+	<remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='SourceCardData']/method[@name='getAdditionalFields' and count(parameter)=0]" />
+	<remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='SourceSepaDebitData']/method[@name='getAdditionalFields' and count(parameter)=0]" />
+
+	<remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='Card']/method[@name='getType']" />
+</metadata>
