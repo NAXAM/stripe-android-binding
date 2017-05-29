@@ -3,13 +3,19 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.Stripe.Droid</id>
-        <version>4.0.2</version>
+        <version>4.0.2.1</version>
         <description>Xamarin Binding Library - Stripe Android SDK</description>
         <authors>Vu Duc Tuyen</authors>
         <owners>NAXAM CO.,LTD</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Stripe Android SDK</title>
-        <releaseNotes>Stripe Android SDK v4.0.2</releaseNotes>
+        <releaseNotes>
+Stripe Android SDK v4.0.2/Remove internal static interfaces
+- LockableScrollChangedListener
+- CardBrandChangeListener
+- CardNumberCompleteListener
+- ExpiryDateEditListener
+        </releaseNotes>
         <summary>Xamarin Binding Library - Stripe Android SDK</summary>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/NAXAM/xand-stripe</projectUrl>

@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naxam.Stripe.Droid", "Naxam.Stripe.Droid\Naxam.Stripe.Droid.csproj", "{7815A47B-A3E2-4A84-BED6-CD67DD747C96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StripeQs", "qs\StripeQs\StripeQs.csproj", "{98C445AC-CAEE-4E76-B942-D929AFA6E94F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "qs", "qs", "{22131015-0721-4FF1-8061-9ACA4CD2EA53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,12 @@ Global
 		{7815A47B-A3E2-4A84-BED6-CD67DD747C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7815A47B-A3E2-4A84-BED6-CD67DD747C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7815A47B-A3E2-4A84-BED6-CD67DD747C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C445AC-CAEE-4E76-B942-D929AFA6E94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C445AC-CAEE-4E76-B942-D929AFA6E94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C445AC-CAEE-4E76-B942-D929AFA6E94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C445AC-CAEE-4E76-B942-D929AFA6E94F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98C445AC-CAEE-4E76-B942-D929AFA6E94F} = {22131015-0721-4FF1-8061-9ACA4CD2EA53}
 	EndGlobalSection
 EndGlobal
