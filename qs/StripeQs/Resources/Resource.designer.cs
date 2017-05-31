@@ -1182,25 +1182,16 @@ namespace StripeQs
 			public const int abc_text_size_title_material_toolbar = 2131230724;
 			
 			// aapt resource value: 0x7f08004b
-			public const int android_pay_button_layout_margin = 2131230795;
+			public const int card_cvc_initial_margin = 2131230795;
 			
 			// aapt resource value: 0x7f08004c
-			public const int android_pay_button_separation = 2131230796;
+			public const int card_expiry_initial_margin = 2131230796;
 			
 			// aapt resource value: 0x7f08004d
-			public const int android_pay_confirmation_margin = 2131230797;
+			public const int card_icon_padding = 2131230797;
 			
 			// aapt resource value: 0x7f08004e
-			public const int card_cvc_initial_margin = 2131230798;
-			
-			// aapt resource value: 0x7f08004f
-			public const int card_expiry_initial_margin = 2131230799;
-			
-			// aapt resource value: 0x7f080050
-			public const int card_icon_padding = 2131230800;
-			
-			// aapt resource value: 0x7f080051
-			public const int card_widget_min_width = 2131230801;
+			public const int card_widget_min_width = 2131230798;
 			
 			// aapt resource value: 0x7f080043
 			public const int disabled_alpha_material_dark = 2131230787;
