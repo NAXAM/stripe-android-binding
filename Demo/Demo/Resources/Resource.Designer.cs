@@ -1342,16 +1342,25 @@ namespace Demo
 			public const int abc_text_size_title_material_toolbar = 2131034119;
 			
 			// aapt resource value: 0x7f050065
-			public const int card_cvc_initial_margin = 2131034213;
+			public const int android_pay_button_layout_margin = 2131034213;
 			
 			// aapt resource value: 0x7f050066
-			public const int card_expiry_initial_margin = 2131034214;
+			public const int android_pay_button_separation = 2131034214;
 			
 			// aapt resource value: 0x7f050067
-			public const int card_icon_padding = 2131034215;
+			public const int android_pay_confirmation_margin = 2131034215;
 			
 			// aapt resource value: 0x7f050068
-			public const int card_widget_min_width = 2131034216;
+			public const int card_cvc_initial_margin = 2131034216;
+			
+			// aapt resource value: 0x7f050069
+			public const int card_expiry_initial_margin = 2131034217;
+			
+			// aapt resource value: 0x7f05006a
+			public const int card_icon_padding = 2131034218;
+			
+			// aapt resource value: 0x7f05006b
+			public const int card_widget_min_width = 2131034219;
 			
 			// aapt resource value: 0x7f050051
 			public const int disabled_alpha_material_dark = 2131034193;
