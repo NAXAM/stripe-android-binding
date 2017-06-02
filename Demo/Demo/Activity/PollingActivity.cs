@@ -21,7 +21,7 @@ using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Reactive.Concurrency;
 using Com.Stripe.Android.Net;
-using Com.Stripe.Android.Exception; 
+using Com.Stripe.Android.Exception;
 
 namespace Demo.Activity
 {
@@ -135,12 +135,15 @@ namespace Demo.Activity
             });
 
             mCompositeSubscription.Add(cardSourceObservable
-              //.SubscribeOn(Scheduler.Immediate)
+              .SubscribeOn(Scheduler.Default)
               .ObserveOn(Scheduler.CurrentThread)
               .Do((s) =>
               {
-                  mProgressDialogController.SetMessageResource(Resource.String.createSource);
-                  mProgressDialogController.StartProgress();
+                  RunOnUiThread(() =>
+                  {
+                      mProgressDialogController.SetMessageResource(Resource.String.createSource);
+                      mProgressDialogController.StartProgress();
+                  });
               })
               .Subscribe(
                 (s) =>
@@ -148,37 +151,44 @@ namespace Demo.Activity
                     try
                     {
                         SourceCardData sourceCardData = (SourceCardData)s.SourceTypeModel;
-                        mPollingAdapter.AddItem(
+                        RunOnUiThread(() =>
+                        {
+                            mPollingAdapter.AddItem(
                             s.Status,
                             sourceCardData.ThreeDSecureStatus,
                             s.Id,
                             s.Type);
-                        // If we need to get 3DS verification for this card, we
-                        // first create a 3DS Source.
-                        if (SourceCardData.Required.Equals(
-                                sourceCardData.ThreeDSecureStatus))
-                        {
 
-                            // The card Source can be used to create a 3DS Source
-                            CreateThreeDSecureSource(s.Id,
-                                    shouldPollWithBlockingMethod);
-                        }
-                        else
-                        {
-                            mProgressDialogController.FinishProgress();
-                        }
+                            // If we need to get 3DS verification for this card, we
+                            // first create a 3DS Source.
+                            if (SourceCardData.Required.Equals(
+                                    sourceCardData.ThreeDSecureStatus))
+                            {
+
+                                // The card Source can be used to create a 3DS Source
+                                CreateThreeDSecureSource(s.Id,
+                                        shouldPollWithBlockingMethod);
+                            }
+                            else
+                            {
+                                mProgressDialogController.FinishProgress();
+                            }
+                        });
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         mProgressDialogController.FinishProgress();
                         mErrorDialogHandler.ShowError(e.Message);
                     }
                     // Making a note of the Card Source in our list.
-                    
+
                 },
                 (t) =>
                 {
-                    mErrorDialogHandler.ShowError(t.Message);
+                    RunOnUiThread(() =>
+                    {
+                        mErrorDialogHandler.ShowError(t.Message);
+                    });
                 }));
         }
 
@@ -202,16 +212,25 @@ namespace Demo.Activity
                 .ObserveOn(Scheduler.CurrentThread)
                 .Do((s) => { }, (t) =>
                 {
-                    mProgressDialogController.FinishProgress();
+                    RunOnUiThread(() =>
+                    {
+                        mProgressDialogController.FinishProgress();
+                    });
                 })
                 .Subscribe(
                 (source) =>
                 {
-                    ShowDialog(source);
+                    RunOnUiThread(() =>
+                    {
+                        ShowDialog(source);
+                    });
                 },
                 (t) =>
                 {
-                    mErrorDialogHandler.ShowError(t.Message);
+                    RunOnUiThread(() =>
+                    {
+                        mErrorDialogHandler.ShowError(t.Message);
+                    });
                 }));
         }
 
@@ -233,15 +252,15 @@ namespace Demo.Activity
                     new PollingResponseHandler(),
                 null);
         }
-        class PollingResponseHandler : Java.Lang.Object,IPollingResponseHandler
+        class PollingResponseHandler : Java.Lang.Object, IPollingResponseHandler
         {
-              
+
             public void OnPollingResponse(PollingResponse pollingResponse)
             {
                 mProgressDialogController.FinishProgress();
                 UpdatePollingSourceList(pollingResponse);
             }
-             
+
         }
 
         private void PollSynchronouslyForSourceChanges(string sourceId, string clientSecret)
@@ -260,20 +279,32 @@ namespace Demo.Activity
                 .ObserveOn(Scheduler.CurrentThread)
                 .Do((s) =>
                 {
-                    mProgressDialogController.SetMessageResource(Resource.String.pollingSource);
-                    mProgressDialogController.StartProgress();
+                    RunOnUiThread(() =>
+                    {
+                        mProgressDialogController.SetMessageResource(Resource.String.pollingSource);
+                        mProgressDialogController.StartProgress();
+                    });
                 }, (t) =>
                 {
-                    mProgressDialogController.FinishProgress();
+                    RunOnUiThread(() =>
+                    {
+                        mProgressDialogController.FinishProgress();
+                    });
                 })
                 .Subscribe(
                 (pollingResponse) =>
                 {
-                    UpdatePollingSourceList(pollingResponse);
+                    RunOnUiThread(() =>
+                    {
+                        UpdatePollingSourceList(pollingResponse);
+                    });
                 },
                 (throwable) =>
                 {
-                    mErrorDialogHandler.ShowError(throwable.Message);
+                    RunOnUiThread(() =>
+                    {
+                        mErrorDialogHandler.ShowError(throwable.Message);
+                    });
                 }));
         }
 
