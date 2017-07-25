@@ -4,20 +4,17 @@
         <!-- Required elements-->
         <id>Naxam.Stripe.Droid</id>
         <version>4.1.4.0</version>
-        <description>Xamarin Binding Library - Stripe Android SDK</description>
-        <authors>Vu Duc Tuyen</authors>
+        <authors>NAXAM</authors>
         <owners>NAXAM CO.,LTD</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Stripe Android SDK</title>
-        <releaseNotes>
-Stripe Android SDK v4.0.2/Fix issue on generating StripeSourceTypeModel class
-        </releaseNotes>
         <summary>Xamarin Binding Library - Stripe Android SDK</summary>
+        <description>Xamarin Binding Library - Stripe Android SDK</description>
+        <releaseNotes>Stripe Android SDK v4.1.4</releaseNotes>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/NAXAM/xand-stripe</projectUrl>
         <copyright>Copyright (c) 2017 NAXAM</copyright>
         <tags>Xamarin.Android, stripe</tags>
-
         <dependencies>
             <dependency id="Xamarin.Android.Support.v4" version="25.3.1" />
             <dependency id="Xamarin.Android.Support.v7.AppCompat" version="25.3.1" />
