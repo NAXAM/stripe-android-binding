@@ -30,4 +30,5 @@
   <remove-node path="/api/package[@name='com.stripe.android.view']/interface[@name='CardNumberEditText.CardBrandChangeListener']" />
   <remove-node path="/api/package[@name='com.stripe.android.view']/interface[@name='CardNumberEditText.CardNumberCompleteListener']" />
   <remove-node path="/api/package[@name='com.stripe.android.view']/interface[@name='ExpiryDateEditText.ExpiryDateEditListener']" />
+  <remove-node path="/api/package[@name='com.stripe.android.net']/interface[@name='StripeApiHandler.StripeResponseListener']" />
 </metadata>
