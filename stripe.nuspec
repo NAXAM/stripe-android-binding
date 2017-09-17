@@ -3,21 +3,22 @@
     <metadata>
         <!-- Required elements-->
         <id>Naxam.Stripe.Droid</id>
-        <version>4.1.4.0</version>
+        <version>5.0.0.0</version>
         <authors>NAXAM</authors>
         <owners>NAXAM CO.,LTD</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Stripe Android SDK</title>
         <summary>Xamarin Binding Library - Stripe Android SDK</summary>
         <description>Xamarin Binding Library - Stripe Android SDK</description>
-        <releaseNotes>Stripe Android SDK v4.1.4</releaseNotes>
+        <releaseNotes>Stripe Android SDK v5.0.0</releaseNotes>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/NAXAM/xand-stripe</projectUrl>
         <copyright>Copyright (c) 2017 NAXAM</copyright>
         <tags>Xamarin.Android, stripe</tags>
         <dependencies>
-            <dependency id="Xamarin.Android.Support.v4" version="25.3.1" />
-            <dependency id="Xamarin.Android.Support.v7.AppCompat" version="25.3.1" />
+            <dependency id="Xamarin.Android.Support.Annotations" version="25.4.0.2" />
+            <dependency id="Xamarin.Android.Support.Design" version="25.4.0.2" />
+            <dependency id="Xamarin.Android.Support.v7.AppCompat" version="25.4.0.2" />
         </dependencies>
     </metadata>
     <!-- Optional 'files' node -->

@@ -1,14 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
-
-  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='StripeSourceTypeModel']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getReceiver']" name="propertyName">SourceReceiver</attr>
   <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setReceiver']" name="propertyName">SourceReceiver</attr>
 
@@ -17,18 +8,12 @@
 
   <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getCodeVerification']" name="propertyName">SourceCodeVerification</attr>
   <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setCodeVerification']" name="propertyName">SourceCodeVerification</attr>
-  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getSourceTypeModel' and count(parameter)=0]" name="return">com.stripe.android.model.StripeSourceTypeModel</attr>
 
-  <attr path="/api/package[@name='com.stripe.android.time']/class[@name='Clock']/method[@name='getCalendarInstance']" name="propertyName">SharedCalendar</attr>
-
-  <remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='SourceCardData']/method[@name='getAdditionalFields' and count(parameter)=0]" />
-  <remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='SourceSepaDebitData']/method[@name='getAdditionalFields' and count(parameter)=0]" />
-
-  <remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='Card']/method[@name='getType']" />
-
-  <remove-node path="/api/package[@name='com.stripe.android.view']/interface[@name='LockableHorizontalScrollView.LockableScrollChangedListener']" />
-  <remove-node path="/api/package[@name='com.stripe.android.view']/interface[@name='CardNumberEditText.CardBrandChangeListener']" />
-  <remove-node path="/api/package[@name='com.stripe.android.view']/interface[@name='CardNumberEditText.CardNumberCompleteListener']" />
-  <remove-node path="/api/package[@name='com.stripe.android.view']/interface[@name='ExpiryDateEditText.ExpiryDateEditListener']" />
-  <remove-node path="/api/package[@name='com.stripe.android.net']/interface[@name='StripeApiHandler.StripeResponseListener']" />
+  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='StripeSourceTypeModel']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.stripe.android']/class[@name='EphemeralKeyManager']" name="visibility">public</attr>
+  
+  <attr path="/api/package[@name='com.stripe.android']/interface[@name='CustomerSession.SourceRetrievalListener']/method[@name='onError' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.String']]" name="managedName">OnSourceError</attr>
+  <attr path="/api/package[@name='com.stripe.android']/interface[@name='CustomerSession.CustomerRetrievalListener']/method[@name='onError' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.String']]" name="managedName">OnCustomerError</attr>
+  <remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='SourceSepaDebitData']/method[@name='getAdditionalFields' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='SourceCardData']/method[@name='getAdditionalFields' and count(parameter)=0]"/>
 </metadata>
