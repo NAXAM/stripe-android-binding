@@ -1,5 +1,6 @@
 <img src="./art/repo_header.png" alt="AccountKit for Xamarin.Android" width="728" />
 # Stripe for Xamarin.Android
+A Xamarin.Android binding library for [Stripe](https://github.com/stripe/stripe-android) library.
 
 ## About
 This project is maintained by Naxam Co.,Ltd.<br>
