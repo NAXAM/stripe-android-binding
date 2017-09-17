@@ -1,4 +1,5 @@
 <img src="./art/repo_header.png" alt="AccountKit for Xamarin.Android" width="728" />
+
 # Stripe for Xamarin.Android
 A Xamarin.Android binding library for [Stripe](https://github.com/stripe/stripe-android) library.
 
@@ -39,5 +40,5 @@ Contact us if interested.
 <img src="https://github.com/NAXAM/naxam.github.io/blob/master/assets/img/hire_button.png" height="34"></a> <br>
 <br>
 
-Follow us for the latest updates<br>[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/naxam/accountkit-android-binding)
+Follow us for the latest updates<br>[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=https://github.com/naxam/stripe-android-binding)
 [![Twitter Follow](https://img.shields.io/twitter/follow/naxamco.svg?style=social)](https://twitter.com/naxamco)
