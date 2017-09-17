@@ -12,6 +12,8 @@ We specialize in developing mobile applications using Xamarin and native technol
 <a href="mailto:tuyen@naxam.net"> 
 <img src="https://github.com/NAXAM/naxam.github.io/blob/master/assets/img/hire_button.png?raw=true" height="40"></a> <br>
 
+## Installation
+
 ```
 Install-Package Naxam.Stripe.Droid
 ```
