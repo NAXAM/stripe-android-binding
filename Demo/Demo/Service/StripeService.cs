@@ -1,16 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Retrofit2.Http;
-using Okhttp3;
-using IO.Reactivex.Internal.Operators;
+using Square.OkHttp3;
+using Square.Retrofit2.Http;
 
 namespace Demo.Service
 {

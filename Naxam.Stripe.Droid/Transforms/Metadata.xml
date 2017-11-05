@@ -1,19 +1,61 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getReceiver']" name="propertyName">SourceReceiver</attr>
-  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setReceiver']" name="propertyName">SourceReceiver</attr>
-
-  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getRedirect']" name="propertyName">SourceRedirect</attr>
-  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setRedirect']" name="propertyName">SourceRedirect</attr>
-
-  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getCodeVerification']" name="propertyName">SourceCodeVerification</attr>
-  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setCodeVerification']" name="propertyName">SourceCodeVerification</attr>
-
-  <attr path="/api/package[@name='com.stripe.android.model']/class[@name='StripeSourceTypeModel']" name="visibility">public</attr>
-  <attr path="/api/package[@name='com.stripe.android']/class[@name='EphemeralKeyManager']" name="visibility">public</attr>
-  
-  <attr path="/api/package[@name='com.stripe.android']/interface[@name='CustomerSession.SourceRetrievalListener']/method[@name='onError' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.String']]" name="managedName">OnSourceError</attr>
-  <attr path="/api/package[@name='com.stripe.android']/interface[@name='CustomerSession.CustomerRetrievalListener']/method[@name='onError' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.String']]" name="managedName">OnCustomerError</attr>
-  <remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='SourceSepaDebitData']/method[@name='getAdditionalFields' and count(parameter)=0]"/>
-  <remove-node path="/api/package[@name='com.stripe.android.model']/class[@name='SourceCardData']/method[@name='getAdditionalFields' and count(parameter)=0]"/>
+	<attr
+		path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getReceiver']"
+		name="propertyName">SourceReceiver</attr>
+	<attr
+		path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setReceiver']"
+		name="propertyName">SourceReceiver</attr>
+	<attr
+		path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getRedirect']"
+		name="propertyName">SourceRedirect</attr>
+	<attr
+		path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setRedirect']"
+		name="propertyName">SourceRedirect</attr>
+	<attr
+		path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='getCodeVerification']"
+		name="propertyName">SourceCodeVerification</attr>
+	<attr
+		path="/api/package[@name='com.stripe.android.model']/class[@name='Source']/method[@name='setCodeVerification']"
+		name="propertyName">SourceCodeVerification</attr>
+	<attr
+		path="/api/package[@name='com.stripe.android.model']/class[@name='StripeSourceTypeModel']"
+		name="visibility">public</attr>
+	<attr
+		path="/api/package[@name='com.stripe.android']/class[@name='EphemeralKeyManager']"
+		name="visibility">public</attr>
+	<attr
+		path="/api/package[@name='com.stripe.android']/interface[@name='CustomerSession.SourceRetrievalListener']/method[@name='onError' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.String']]"
+		name="managedName">OnSourceError</attr>
+	<attr
+		path="/api/package[@name='com.stripe.android']/interface[@name='CustomerSession.CustomerRetrievalListener']/method[@name='onError' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='java.lang.String']]"
+		name="managedName">OnCustomerError</attr>
+	<remove-node
+		path="/api/package[@name='com.stripe.android.model']/class[@name='SourceSepaDebitData']/method[@name='getAdditionalFields' and count(parameter)=0]" />
+	<remove-node
+		path="/api/package[@name='com.stripe.android.model']/class[@name='SourceCardData']/method[@name='getAdditionalFields' and count(parameter)=0]" />
+	<attr
+		path="/api/package[@name='com.stripe.android.view']/class[@name='StripeActivity']"
+		name="visibility">public</attr>
+	<remove-node
+		path="/api/package[@name='com.stripe.android']/interface[@name='EphemeralKeyManager.KeyManagerListener']"/>
+	<remove-node
+		path="/api/package[@name='com.stripe.android.view']/interface[@name='CardNumberEditText.CardBrandChangeListener']" />
+	<remove-node
+		path="/api/package[@name='com.stripe.android.view']/interface[@name='CardNumberEditText.CardNumberCompleteListener']" />
+	<remove-node
+		path="/api/package[@name='com.stripe.android.view']/interface[@name='ExpiryDateEditText.ExpiryDateEditListener']" />
+	<remove-node
+		path="/api/package[@name='com.stripe.android.view']/interface[@name='LockableHorizontalScrollView.LockableScrollChangedListener']" />
+	<remove-node
+		path="/api/package[@name='com.stripe.android.view']/interface[@name='CountryAutoCompleteTextView.CountryChangeListener']" />
+	<remove-node
+		path="/api/package[@name='com.stripe.android.view']/interface[@name='StripeEditText.AfterTextChangedListener']" />
+	<remove-node
+		path="/api/package[@name='com.stripe.android.view']/interface[@name='StripeEditText.DeleteEmptyListener']" />
+	<remove-node
+		path="/api/package[@name='com.stripe.android.view']/interface[@name='StripeEditText.ErrorMessageListener']" />
+	<remove-node
+		path="/api/package[@name='com.stripe.android.view']/interface[@name='StripeActivity.AlertMessageListener']"
+        />
 </metadata>

@@ -35,8 +35,8 @@ namespace Demo.Activity
             Button sourceButton = FindViewById<Button>(Resource.Id.btn_make_sources);
             sourceButton.Click += (s, e) =>
             {
-                Intent intent = new Intent(this, typeof(PollingActivity));
-                StartActivity(intent);
+                // TODO Intent intent = new Intent(this, typeof(PollingActivity));
+                // StartActivity(intent);
             };
         }
     }
