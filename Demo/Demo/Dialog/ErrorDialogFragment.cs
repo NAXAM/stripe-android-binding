@@ -24,8 +24,6 @@ namespace Demo.Dialog
             return fragment;
         }
 
-        
-
         public ErrorDialogFragment()
         {
             // Empty constructor required for DialogFragment
@@ -44,13 +42,8 @@ namespace Demo.Dialog
                 .SetMessage(message) 
                 .Create();
         }
-        public class ClickListener : IDialogInterfaceOnClickListener
+        public class ClickListener : Java.Lang.Object, IDialogInterfaceOnClickListener
         {
-            public IntPtr Handle { get; }
-
-            public void Dispose()
-            {
-            }
 
             public void OnClick(IDialogInterface dialog, int which)
             {
