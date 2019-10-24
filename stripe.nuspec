@@ -16,9 +16,10 @@
         <copyright>Copyright (c) 2017 NAXAM</copyright>
         <tags>xamarin, xamarin-android, Xamarin.Android, stripe</tags>
         <dependencies>
-            <dependency id="Xamarin.Android.Support.Annotations" version="26.1.0.1" />
-            <dependency id="Xamarin.Android.Support.Design" version="26.1.0.1" />
-            <dependency id="Xamarin.Android.Support.v7.AppCompat" version="26.1.0.1" />
+            <dependency id="Xamarin.Android.Support.Annotations" version="28.0.0.3" />
+            <dependency id="Xamarin.Android.Support.Design" version="28.0.0.3" />
+            <dependency id="Xamarin.Android.Support.v7.AppCompat" version="28.0.0.3" />
+            <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="28.0.0.3" />
         </dependencies>
     </metadata>
     <!-- Optional 'files' node -->

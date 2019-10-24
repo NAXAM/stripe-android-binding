@@ -10,7 +10,7 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
-var VERSION = "7.0.1";
+var VERSION = "8.7.0";
 var NUGET_SUFIX = "";
 
 //////////////////////////////////////////////////////////////////////

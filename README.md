@@ -22,6 +22,15 @@ Install-Package Naxam.Stripe.Droid
 
 Plz follow its official guide [here](https://stripe.com/docs).
 
+## Non-breaking change Upgrade
+
+1. Update library version and dependencies if required
+2. Run
+
+```
+sh build.sh --settings_skipverification=true
+```
+
 ## License
 
 AccountKit binding library for Android is released under the MIT license.

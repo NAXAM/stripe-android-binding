@@ -1,28 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Demo.Demo" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-  <uses-sdk android:minSdkVersion="16" />
-  <uses-permission android:name="android.permission.INTERNET" />
-  <application android:label="Demo" android:icon="@drawable/Icon">
-    <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true" />
-    <service android:name=".Service.TokenIntentService" android:exported="false" />
-    <activity
-           android:name=".Activity.LauncherActivity"
-           android:launchMode="singleTask"
-           android:theme="@style/SampleTheme">
-
-    </activity>
-    <activity
-          android:name=".Activity.PaymentActivity"
-          android:launchMode="singleTask"
-          android:theme="@style/SampleTheme">
-    </activity>
-
-    <activity
-      android:name=".Activity.PollingActivity"
-      android:launchMode="singleTask"
-      android:theme="@style/SampleTheme">
-
-    </activity>
-
-  </application>
+	<uses-sdk android:minSdkVersion="16" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:label="Demo" android:icon="@drawable/Icon">
+		<meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true" />
+		<service android:name=".Service.TokenIntentService" android:exported="false" />
+		<activity android:name=".Activity.LauncherActivity" android:launchMode="singleTask" android:theme="@style/SampleTheme"></activity>
+		<activity android:name=".Activity.PaymentActivity" android:launchMode="singleTask" android:theme="@style/SampleTheme"></activity>
+		<activity android:name=".Activity.PollingActivity" android:launchMode="singleTask" android:theme="@style/SampleTheme"></activity>
+	</application>
 </manifest>
